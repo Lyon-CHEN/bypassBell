@@ -42,14 +42,14 @@ Bell路由器使用SFP接口的光纤，同时使用了VLAN，这里有如下两
 ### B，使用支持VLAN和SFP接口的交换机，比如 
 	NETGEAR GC110 <https://www.amazon.ca/gp/product/B01NBBA1HQ/>  
 	步骤如下：
-	1，GC110 光口(g10)连Bell 光纤，电口g8连路由器WAN
-	2，新增VLAN 35, 并将g8和g10加入VLAN35
+		-1，GC110 光口(g10)连Bell 光纤，电口g8连路由器WAN
+		-2，新增VLAN 35, 并将g8和g10加入VLAN35
 ![image](https://github.com/Lyon-CHEN/bypassBell/blob/main/images/6.png)
-	3,    g8配置成access mode,Access VLAN ID为35，Native VLAN ID为35
+		-3, g8配置成access mode,Access VLAN ID为35，Native VLAN ID为35
 ![image](https://github.com/Lyon-CHEN/bypassBell/blob/main/images/7.png)
 
-	4a，(bell)配置WAN口上网为PPPOE拨号，用户名和密码在Bell Account里可以查（没有测试过，只在网上看到的示例）
-	4b,  (aliant.bell altiantic地区) 配置WAN口为DHCP
+		- 4a，(bell)配置WAN口上网为PPPOE拨号，用户名和密码在Bell Account里可以查（没有测试过，只在网上看到的示例）
+		- 4b,  (aliant.bell altiantic地区) 配置WAN口为DHCP
 ![image](https://github.com/Lyon-CHEN/bypassBell/blob/main/images/8.png)
 
 
